@@ -5,8 +5,8 @@ html {
 body {
   font-family: 'Open Sans',serif-serif;
   margin: 0;
+  padding: 0;
   background-color: rgb(44, 41, 38);
-  padding: 0 20px;
 }
 
 a {
@@ -98,6 +98,16 @@ main h1 {
   background-color: rgb(193, 126, 17);
 } 
 
-@media (max-width: 768px)  {
+@media (max-width: 48rem)  {
+  #main-header nav {
+    display: none;
+  }
+  main h1{
+    font-size: 1.5rem;
+  }
+
+  #latest-products ul {
+    grid-template-columns: 100%;
+  }
   
 }
