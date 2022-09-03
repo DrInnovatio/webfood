@@ -11,11 +11,22 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <form action="/user-data" method="GET">
+  <form action="/user-data" method="GET" >
     <label for="username">Your Name</label>
     <input type="text" name="user-name" id="user-name" placeholder="Your Name"/>
     <button type="submit">Submit</button>
     <input type="date" id="birthdate" name="user-birthdate"/>
-  </form>
+
+    <h2>How should we verify your account?</h2>
+    <div class="form-control-inline">
+        <input type="radio" name="verify" id="verify-text-message" value="text">
+        <label for="verify-text-message">via text message</label>
+        <input type="radio" name="verify" id="verify-phone" value="phone">
+        <label for="verify-phone">via phone call</label>
+        <input type="radio" name="verify" id="verify-email" value="email">
+        <label for="verify-email">via email</label>
+      </div>
+      <button>Submit</button>
+    
 </body>
 </html>
