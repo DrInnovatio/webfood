@@ -58,3 +58,12 @@ button:hover {
   width: auto;
   margin-right: 0.5rem;
 }
+
+.form-check {
+  display: flex;
+}
+
+.form-check input {
+  width: auto;
+  margin-right: 0.5rem;
+}
